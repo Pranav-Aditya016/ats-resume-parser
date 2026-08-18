@@ -1,0 +1,22 @@
+# Private credentials and applicant data.
+# Extracted Markdown is the full text of a resume, so it is as sensitive as the
+# source file and must never be committed.
+.env
+resumes/
+parsed_resumes/
+parsed_*/
+# Already committed before these rules existed; keep them visible to git.
+!parsed_csv/
+!parsed_resumes_rerun_2026-07-23/
+markdown/
+# Candidate document drops, whatever the batch folder or archive is called.
+CV*
+*.pdf
+*.docx
+*.zip
+ground_truth/
+evaluation/
+__pycache__/
+testenv/
+.venv/
+*.pyc
